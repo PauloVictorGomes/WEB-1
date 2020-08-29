@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos com JavaScript</title>  
+        <script type="text/javascript">
+        	function exibirCpf(){
+        		var cpf = document.getElementById('display-cpf')
+        		cpf.style.display = 'block'
+        		var cnpj = document.getElementById('display-cnpj')
+        		cnpj.style.display = 'none'
+        	}
+        	function exibirCnpj(){
+        		var cnpj = document.getElementById('display-cnpj')
+        		cnpj.style.display = 'block' 
+        		var cpf = document.getElementById('display-cpf')
+        		cpf.style.display = 'none'
+        	}
+        </script>
+    </head>
+    <body id="corpo">
+    	<div >
+			<input type="radio" value="1" name="doc"  onclick="exibirCpf()">CPF
+			<input type="radio" value="2" name="doc" onclick="exibirCnpj()">CNPJ
+    	</div>
+    	<br>    	
+    	<div id="display-cpf" style="display: none">
+    		CPF : <input type="text" placeholder="Entre com o CPF">
+    	</div>
+    	<div id="display-cnpj" style="display: none">
+    		CNPJ: <input type="text" placeholder="Entre com o CNPJ">
+    	</div>
+    </body>
+
+</html>

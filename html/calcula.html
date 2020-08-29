@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Testando Java Script</title>
+        <script type="text/javascript" src="../js/calcula.js"></script>
+    </head>
+    <body id="documento">
+        <script>
+            var op = getMensagemMenu()
+            var num1, num2, tot = 0
+            num1 = parseInt(prompt("Entre com o primeiro valor: "))
+            num2 = parseInt(prompt("Entre com o segundo valor: "))
+            if (op == '+'){
+              tot = num1 + num2  
+            }
+            else if (op == '-'){
+                    tot = num1 - num2   
+                }
+                else if (op == '*'){
+                        tot = num1 * num2   
+                    }
+                    else if (op == '/'){
+                            tot = num1 / num2  
+                        }
+                        else if (op == '%'){
+                                tot = num1 % num2   
+                            }
+                        alert(tot)
+        </script>
+    </body>
+    
+</html>

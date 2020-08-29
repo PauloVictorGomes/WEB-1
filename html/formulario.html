@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meu primeiro formulário</title>  
+        <style type="text/css">
+        	.img{
+        		width: 40px;
+        	}
+        </style>
+    </head>
+    <body>
+        <form name='formulario' action="http://www.ig.com.br" method="get" id='frm'>
+            Login: <input type="text" name="login"><br/>
+            Senha: <input type="password" name="senha"><br/>
+            Masculino: <input type="radio" name="sexo" value="m"><t>      
+            Feminino: <input type="radio" name="sexo" value="f"> <br/><br>
+            <input type="checkbox"  name="noticias" value="ok">
+            Gostaria de redeceber novas informações através de E-mails<br><br>
+            <input type="button" value="Clique aqui">
+            <input type="reset" value="Redefinir" >
+            <input type="image" src="../img/nuvem.png" class="img"><br><br>
+            <input name="pesq" placeholder="Procurando algo ?">
+            <input type="submit" name="Pesquisa"><br><br>
+            Idade: <input type="number" min="0" step="2" value="25" max="120" name="idade"><br>
+            Observação:<br>
+            <textarea cols="30" rows="5" name="obs"></textarea>
+        </form>
+    </body>
+
+</html>
